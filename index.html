@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Express - Multilingue (V4)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-container">
+        <div class="logo">CE</div>
+        <div>
+          <h1 class="app-title">Code Express</h1>
+          <p class="app-subtitle">Le Code de la Route Multilingue (V4 - Réponses Aléatoires)</p>
+        </div>
+      </div>
+      <div class="lang-selector">
+        <span class="globe-icon">🌐</span>
+        <select id="lang-select">
+          <option value="khmer">Khmer (ខ្មែរ)</option>
+          <option value="english">English</option>
+          <option value="arabic">العربية</option>
+          <option value="spanish">Español</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="tab-btn active" data-tab="series-select">Séries d'examen</button>
+      <button class="tab-btn" data-tab="themed">Séries Thématiques</button>
+      <button class="tab-btn" data-tab="history">Historique & Bilan</button>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Écran de Sélection des Séries -->
+      <section id="series-select-section" class="series-select-container">
+        <div class="welcome-box">
+          <h2>Séries d'entraînement (V4)</h2>
+          <p class="subtitle">Questions et positions des réponses (A, B, C, D) 100% aléatoires. La bonne réponse change de place à chaque fois !</p>
+        </div>
+
+        <div class="section-group">
+          <h3>Séries Découverte (10 questions uniques)</h3>
+          <div class="cards-grid" id="quick-series-grid">
+            <!-- Séries 10 Qs -->
+          </div>
+        </div>
+
+        <div class="section-group" style="margin-top: 30px;">
+          <h3>Séries Examen Blanc Officiel (40 questions uniques)</h3>
+          <div class="cards-grid" id="exam-series-grid">
+            <!-- Séries 40 Qs -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Écran de sélection des thématiques -->
+      <section id="themed-section" class="themed-container hidden">
+        <h2>Séries Thématiques Spécifiques</h2>
+        <p class="subtitle">Sélectionnez une catégorie pour réviser avec des traductions exactes et des réponses mélangées.</p>
+        <div class="cards-grid" id="themes-grid">
+          <!-- Généré via JS -->
+        </div>
+      </section>
+
+      <!-- Section Quiz / QCM -->
+      <section id="quiz-section" class="quiz-container hidden">
+        <div class="quiz-top-bar">
+          <button id="btn-quit" class="btn-secondary">← Quitter la série</button>
+          <span id="question-counter" class="question-counter">Question 1 / 40</span>
+        </div>
+
+        <div class="question-card">
+          <div class="image-wrapper">
+            <svg id="question-svg" viewBox="0 0 200 200" width="160" height="160">
+              <!-- SVG Dynamique -->
+            </svg>
+          </div>
+          <div class="text-group">
+            <h2 id="question-text" class="question-title">Chargement de la question...</h2>
+            <p id="question-translation" class="translation-text"></p>
+          </div>
+        </div>
+
+        <!-- 4 propositions de réponse -->
+        <div id="options-container" class="options-grid">
+          <!-- Boutons générés via JS -->
+        </div>
+
+        <!-- Explication de la réponse -->
+        <div id="explanation-box" class="explanation-box hidden">
+          <h3 id="explanation-title"></h3>
+          <p id="explanation-text"></p>
+          <p id="explanation-translation" class="translation-text"></p>
+        </div>
+
+        <div class="quiz-footer">
+          <button id="btn-next" class="btn-primary" disabled>Valider</button>
+        </div>
+      </section>
+
+      <!-- Écran Bilan et Historique -->
+      <section id="history-section" class="history-container hidden">
+        <h2>Bilan de la session</h2>
+        <div class="score-card" id="final-score-card">
+          <!-- Score injecté via JS -->
+        </div>
+        <h3>Détail des réponses</h3>
+        <div class="recap-list" id="recap-container">
+          <!-- Récapitulatif généré via JS -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
