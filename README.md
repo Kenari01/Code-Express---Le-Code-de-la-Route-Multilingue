@@ -57,3 +57,8 @@ Commit your changes (git commit -m 'Add a new feature').
 Push to the branch (git push origin feature/NewFeature).
 
 Open a Pull Request.
+
+## 🌐 Live Demo
+
+Test the application directly in your browser:  
+👉 **[Code Express - Live Version](https://kenari01.github.io/Code-Express---Le-Code-de-la-Route-Multilingue/)**
