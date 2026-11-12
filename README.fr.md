@@ -57,3 +57,8 @@ Commitez vos changements (git commit -m 'Ajout d'une nouvelle fonctionnalité').
 Pushez vers la branche (git push origin feature/NouvelleFonctionnalite).
 
 Ouvrez une Pull Request.
+
+## 🌐 Démo en ligne
+
+Testez l'application directement dans votre navigateur :  
+👉 **[Code Express - Version en ligne](https://kenari01.github.io/Code-Express---Le-Code-de-la-Route-Multilingue/)**
