@@ -6,7 +6,7 @@ Code Express is an interactive web application designed for learning and reviewi
 
 Ideal for driving license candidates, the app provides random and thematic training series, simulating official exam conditions.
 
-✨ Key Features
+## ✨ Key Features
 
 🌍 Integrated Multilingual Support: Questions, the 4 answer choices, and explanations are instantly translated (French, English, Khmer, Arabic, Spanish). The translation is discreetly displayed below the main language.
 
